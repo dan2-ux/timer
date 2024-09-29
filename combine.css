@@ -211,3 +211,9 @@ label{
         margin-top: 52px;
     }
 }
+@media only screen and (max-width:375) and (max-height:667px){
+    #containerText #textForUp,#containerText #textForDown,#containerText #textForDate{
+        width: 22rem;
+        height: 25rem;
+    }
+}
