@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="combine.css">
+</head>
+<body>
+    <div id="container">
+        <div id="containerbutton">
+            <button id="buttonDate" onclick="buttonDate()">Date</button>
+            <button id="buttonForUp" onclick="buttonForUp()">Count Up</button>
+            <button id="buttonForDown" onclick="buttonForDown()">Count Down</button>
+        </div> 
+        <div id="containerText">
+            <div id="textForDate">
+                <h1>Vietnamese Time</h1>
+                <p id="clock1">00:00:00</p>
+            </div>
+            <div id="textForUp">
+                <h1>Count Up</h1>
+                <p id="clock2">00:00:00</p>
+                <button id="start2" onclick="start()">Start</button>
+                <button id="reset2" onclick="reset()">Reset</button>
+            </div>
+            <div id="textForDown">
+                <h1>Count Down</h1>
+                <div id="clock3container"> 
+                    <label for="clock3hours">Hours</label>
+                    <input type="text" min="0" id="clock3hours">
+                    <label for="clock3mins">Mins</label>
+                    <input type="text" min="0" id="clock3mins">
+                    <label for="clock3secs" >Secs</label>
+                    <input type="text" min="0" id="clock3secs">
+                    <button id="takevalue">Take <br>value</button>
+                </div>
+                
+                <p id="clock3">00:00:00</p>
+                <div id="button3container">
+                    <button id="clock3start" onclick="start3()">
+                        Start
+                    </button>
+                    <button id="clock3reset" onclick="reset3()">
+                        Reset
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="combine.js"></script>
+</body>
+</html>

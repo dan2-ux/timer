@@ -1,0 +1,213 @@
+#container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+ #containerText #textForUp,#containerText #textForDown{
+    border:3px solid;
+    position:absolute;
+    top:50.2%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 45rem;
+    height: 30rem;
+    background-color: hsl(0, 0%, 80%);
+    display: none;
+    border:0;
+}
+
+#containerText #textForDate{
+    border:3px solid;
+    position:absolute;
+    top:50.2%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 45rem;
+    height: 30rem;
+    background-color: hsl(0, 0%, 80%);
+    border:0;
+    cursor: pointer;
+}
+#containerText #textForDate:hover{
+    box-shadow: 5px 5px 5px 5px;
+}
+
+#container #containerbutton button{
+    cursor: pointer;
+    padding:1rem;
+    background-color: hsl(0, 0%, 80%);
+    border:0;
+}
+#container #containerbutton button:hover{
+    transform: scale(109%,109%);
+    box-shadow: 5px 5px 5px;
+    background-color: hsl(0, 0%, 75%);
+}
+body{
+    background-color: hsl(0, 0%, 90%);
+}
+
+#container #containerText h1{
+    text-align: center;
+    color: rgb(185, 36, 36);
+    margin-top:3rem
+}
+
+#container #containerText #clock1{
+    font-size: 6rem;
+    text-align: center;
+    font-family: monospace;
+}
+#container #containerText #clock2{
+    font-size: 6rem;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 0;
+}
+#container #containerText #textForUp{
+    text-align: center;
+    cursor: pointer;
+}
+#container #containerText #textForUp:hover{
+    box-shadow: 5px 5px 5px 5px;
+}
+#container #containerText #textForDown:hover{
+    box-shadow: 5px 5px 5px 5px;
+}
+#container #containerText #textForDown{
+    cursor: pointer;
+}
+#container #containerText #textForUp button{
+    padding:1.5rem;
+    margin-top:3rem;
+    margin-left:5rem;
+    margin-right:5rem;
+    border:0;
+    border-radius: 45px;
+    cursor: pointer;
+
+}
+#container #containerText #textForUp button:hover{
+    background-color: hsl(0, 0%, 92%);
+}
+#container #containerText #textForUp button:active{
+    background-color: hsl(0, 0%, 90%);
+    border:0.5px solid;
+}
+
+#textForDown #clock3{
+    font-size: 6rem;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+#textForDown #button3container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#textForDown #button3container button{
+    padding:1.5rem;
+    margin-top:3rem;
+    margin-left:5rem;
+    margin-right:5rem;
+    border:0;
+    border-radius: 45px;
+    cursor: pointer;
+}
+#textForDown #button3container button:hover{
+    background-color: hsl(0, 0%, 92%);
+}
+#textForDown #button3container button:active{
+    background-color: hsl(0, 0%, 90%);
+    border:0.5px solid;
+}
+
+#textForDown #clock3container{
+    margin:0;
+}
+#clock3hours,#clock3mins,#clock3secs{
+    width: 5rem;
+    padding:1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right:1.2rem;
+    margin-left:0.1rem;
+    border:0;
+    border-radius: 3rem;
+}
+#clock3container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+label{
+    font-size: 2rem;
+}
+#takevalue{
+    padding:0.8rem;
+    border-radius: 0.5rem;
+    border:0;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width:600px){
+    #containerText #textForUp,#containerText #textForDown,#containerText #textForDate{
+        width: 22rem;
+        height: 30rem;
+    }
+    #container #containerText #clock1{
+        font-size: 3rem;
+        margin-top: 120px;
+    }
+    #container #containerText #clock2{
+        font-size: 3rem;
+        margin-top: 120px;
+    }
+    #container #containerText #textForUp button{
+        padding:1.5rem;
+        margin-top:3rem;
+        margin-left:1rem;
+        margin-right:1rem;
+        border:0;
+        border-radius: 45px;
+        cursor: pointer;
+    }
+    label{
+        font-size: 1rem;
+    }
+    #clock3hours,#clock3mins,#clock3secs{
+        width: 1.5rem;
+        font-size: 0.7rem;
+        margin-right:0.1rem;
+        border-radius: 2rem;
+        border: 0;
+    }
+    
+    #textForDown #button3container button{
+        padding:1.5rem;
+        margin-top:3rem;
+        margin-left:1rem;
+        margin-right:1rem;
+        border:0;
+        border-radius: 45px;
+        cursor: pointer;
+    }
+    #takevalue{
+        padding:0.2rem;
+        border-radius: 0.5rem;
+        border:0;
+        cursor: pointer;
+    }
+    #textForDown #clock3{
+        font-size: 3rem;
+        margin-top: 52px;
+    }
+}
